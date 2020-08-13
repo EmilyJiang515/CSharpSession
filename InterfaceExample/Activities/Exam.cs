@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace InterfaceExample
+namespace Interface.Activities
 {
-    class Class2: IRegistration
+    class Exam: IActivity
     {
 
         public void RegisterStudent(string student)

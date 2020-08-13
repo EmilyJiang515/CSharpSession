@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Net.Http.Headers;
-using System.Text;
 
-namespace InterfaceExample
+namespace Interface.Activities
 {
-    public class Register: IRegistration
+    public class Register: IActivity
     {
         public bool IsRegistered { get; }
         public int TotalStudent { get; }

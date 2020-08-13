@@ -1,24 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
+using Interface.Activities;
 
-namespace InterfaceExample
+namespace Interface
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            List<IRegistration> registersList = new List<IRegistration>();
+            List<IActivity> activityList = new List<IActivity>();
 
             string studentA = "Tom Barfoot";
 
-            Register registerA=new Register();
-            Class2 registerB=new Class2();
+            Register registerA = new Register();
+            Exam examB = new Exam();
 
-            registersList.Add(registerA);
-            registersList.Add(registerB);
+            activityList.Add(registerA);
+            activityList.Add(examB);
             
-            foreach (var registerItem in registersList)
+            foreach (var registerItem in activityList)
             {
                 registerItem.RegisterStudent(studentA);
             }
